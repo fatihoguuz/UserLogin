@@ -8,54 +8,68 @@
 import Foundation
 import UIKit
 
-class SignInVC: UIViewController, TextFieldCreatable {
-    
-    var nameTextField : UITextField?
-    var passwordTextField : UITextField?
-    var saveButton : UIButton?
+class SignInVC: UIViewController, CustomButtonDelegate, CustomTextFieldDelegate{
+    private var nameTextField: CustomTextField = CustomTextField()
+    private let passwordTextField: CustomTextField = CustomTextField()
+    var saveButton : CustomButton = CustomButton()
+    static let current: SignInVC = SignInVC()
+
     
     override func viewDidLoad() {
-        view.backgroundColor = .orange
+        super.viewDidLoad()
         setupUI()
-        
+        setupContraits()
+        nameTextField.delegate = self
+        passwordTextField.delegate = self
+        saveButton.delegate = self
+        view.bringSubviewToFront(nameTextField)
     }
-    
-    func setupUI() {
-        let nameTextField = createCustomTextField(
-                    frame: CGRect(x: view.frame.width / 8, y: view.frame.height / 3, width: 300, height: 30),
-                    backgroundColor: .white,
-                    textColor: .black,
-                    placeholder: "Name",
-                    cornerRadius: 10,
-                    leftPadding: 20     )
+    func setupUI(){
+        view.backgroundColor = AppColorS.darkOrange
+        navigationController?.navigationBar.tintColor = AppColorS.navOrange
         view.addSubview(nameTextField)
-        
-     
-        
-        let passwordTextField = createCustomTextField(
-                    frame: CGRect(x: view.frame.width / 8, y: view.frame.height / 2 - 50, width: 300, height: 30),
-                    backgroundColor: .white,
-                    textColor: .black,
-                    placeholder: "Password",
-                    cornerRadius: 10,
-                    leftPadding: 20     )
-        passwordTextField.isSecureTextEntry = true
         view.addSubview(passwordTextField)
+        view.addSubview(saveButton)
         
-        saveButton = UIButton.init(frame: CGRect(x: view.frame.width / 8 , y: view.frame.height / 2 + 100 , width: 300, height: 40))
-        saveButton?.setTitle("Save", for: .normal)
-        saveButton?.tintColor = .black
-        saveButton?.backgroundColor = .systemOrange
-        saveButton?.layer.cornerRadius = 10
-        saveButton?.addTarget(self, action: #selector(saveButtonAction), for: .touchUpInside)
-        view.addSubview(self.saveButton!)
+        nameTextField.translatesAutoresizingMaskIntoConstraints = false
+        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
+        saveButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        nameTextField.configureTF(nameText: "Name",backgroundColor: AppColorS.notOrange)
+        passwordTextField.configureTF(passwordText: "Password",backgroundColor: AppColorS.notOrange)
+        saveButton.configure(title: "Save", backroundColor: AppColorS.buttonOrange)
+    }
+    private func setupContraits(){
+        NSLayoutConstraint.activate([
+        
+         nameTextField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
+              nameTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
+              nameTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
+              nameTextField.heightAnchor.constraint(equalToConstant: 70),
+
+              // passwordTextField Kısıtlamaları
+              passwordTextField.topAnchor.constraint(equalTo: nameTextField.bottomAnchor, constant: -20),
+              passwordTextField.leadingAnchor.constraint(equalTo: nameTextField.leadingAnchor),
+              passwordTextField.trailingAnchor.constraint(equalTo: nameTextField.trailingAnchor),
+              passwordTextField.heightAnchor.constraint(equalToConstant: 70),
+
+              // saveButton Kısıtlamaları
+              saveButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 120),
+              saveButton.leadingAnchor.constraint(equalTo: passwordTextField.leadingAnchor),
+              saveButton.trailingAnchor.constraint(equalTo: passwordTextField.trailingAnchor),
+              saveButton.heightAnchor.constraint(equalToConstant: 70)
+        ])
+    
+ }
+    func didTapTextField(_ textField: UITextField) {
+        nameTextField.configureTF(nameText: "Enter Name",backgroundColor: AppColorS.notOrange)
+        textField.becomeFirstResponder()
     }
     
-    @objc func saveButtonAction() {
-        let goHomeVC = HomeVC()
-        self.navigationController?.pushViewController(goHomeVC, animated: true)
+    func didTapButton(_ button: CustomButton) {
+        saveButton.configure(title: "Success",backroundColor: .white)
+        self.navigationController?.pushViewController(HomeVC(), animated: false)
     }
-    
-    
     
 }
+

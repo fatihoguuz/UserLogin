@@ -7,33 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D4EC8B02C777BC50012459F /* ColorPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4EC8AF2C777BC50012459F /* ColorPage.swift */; };
+		3DA638482C75F824003807DD /* CustomButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA638472C75F824003807DD /* CustomButtonDelegate.swift */; };
+		3DA6384A2C761FA3003807DD /* CustomTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA638492C761FA3003807DD /* CustomTextFieldDelegate.swift */; };
 		3DCA14A52C676F2300C969CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA14A42C676F2300C969CE /* AppDelegate.swift */; };
 		3DCA14A72C676F2300C969CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA14A62C676F2300C969CE /* SceneDelegate.swift */; };
 		3DCA14A92C676F2300C969CE /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA14A82C676F2300C969CE /* SignUpVC.swift */; };
-		3DCA14AC2C676F2300C969CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA14AA2C676F2300C969CE /* Main.storyboard */; };
 		3DCA14AE2C676F2500C969CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA14AD2C676F2500C969CE /* Assets.xcassets */; };
 		3DCA14B12C676F2500C969CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA14AF2C676F2500C969CE /* LaunchScreen.storyboard */; };
-		3DCA14BD2C676FC000C969CE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA14BC2C676FC000C969CE /* ViewModel.swift */; };
 		3DCA14BF2C676FE700C969CE /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA14BE2C676FE700C969CE /* LaunchVC.swift */; };
 		3DCA14C12C67705B00C969CE /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA14C02C67705B00C969CE /* SignInVC.swift */; };
 		3DCA14C32C67706E00C969CE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA14C22C67706E00C969CE /* HomeVC.swift */; };
-		3DCA14C52C6770C000C969CE /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA14C42C6770C000C969CE /* Protocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D4EC8AF2C777BC50012459F /* ColorPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPage.swift; sourceTree = "<group>"; };
+		3DA638472C75F824003807DD /* CustomButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonDelegate.swift; sourceTree = "<group>"; };
+		3DA638492C761FA3003807DD /* CustomTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldDelegate.swift; sourceTree = "<group>"; };
 		3DCA14A12C676F2300C969CE /* UserLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCA14A42C676F2300C969CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DCA14A62C676F2300C969CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3DCA14A82C676F2300C969CE /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
-		3DCA14AB2C676F2300C969CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DCA14AD2C676F2500C969CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DCA14B02C676F2500C969CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DCA14B22C676F2500C969CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3DCA14BC2C676FC000C969CE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		3DCA14BE2C676FE700C969CE /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
 		3DCA14C02C67705B00C969CE /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		3DCA14C22C67706E00C969CE /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		3DCA14C42C6770C000C969CE /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,12 +47,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D4EC8AE2C777BAB0012459F /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				3D4EC8AF2C777BC50012459F /* ColorPage.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
 		3DCA14982C676F2300C969CE = {
 			isa = PBXGroup;
 			children = (
-				3DCA14B82C676F4A00C969CE /* Delegate */,
-				3DCA14BB2C676F9500C969CE /* Protocol */,
-				3DCA14BA2C676F8600C969CE /* ViewModel */,
+				3D4EC8AE2C777BAB0012459F /* Color */,
+				3DCA14B82C676F4A00C969CE /* ViewSettings */,
+				3DCA14BA2C676F8600C969CE /* Custom */,
 				3DCA14B92C676F7B00C969CE /* View */,
 				3DCA14A32C676F2300C969CE /* UserLogin */,
 				3DCA14A22C676F2300C969CE /* Products */,
@@ -70,7 +78,6 @@
 		3DCA14A32C676F2300C969CE /* UserLogin */ = {
 			isa = PBXGroup;
 			children = (
-				3DCA14AA2C676F2300C969CE /* Main.storyboard */,
 				3DCA14AD2C676F2500C969CE /* Assets.xcassets */,
 				3DCA14AF2C676F2500C969CE /* LaunchScreen.storyboard */,
 				3DCA14B22C676F2500C969CE /* Info.plist */,
@@ -78,13 +85,13 @@
 			path = UserLogin;
 			sourceTree = "<group>";
 		};
-		3DCA14B82C676F4A00C969CE /* Delegate */ = {
+		3DCA14B82C676F4A00C969CE /* ViewSettings */ = {
 			isa = PBXGroup;
 			children = (
 				3DCA14A42C676F2300C969CE /* AppDelegate.swift */,
 				3DCA14A62C676F2300C969CE /* SceneDelegate.swift */,
 			);
-			path = Delegate;
+			path = ViewSettings;
 			sourceTree = "<group>";
 		};
 		3DCA14B92C676F7B00C969CE /* View */ = {
@@ -98,20 +105,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		3DCA14BA2C676F8600C969CE /* ViewModel */ = {
+		3DCA14BA2C676F8600C969CE /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				3DCA14BC2C676FC000C969CE /* ViewModel.swift */,
+				3DA638472C75F824003807DD /* CustomButtonDelegate.swift */,
+				3DA638492C761FA3003807DD /* CustomTextFieldDelegate.swift */,
 			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		3DCA14BB2C676F9500C969CE /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				3DCA14C42C6770C000C969CE /* Protocol.swift */,
-			);
-			path = Protocol;
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,7 +174,6 @@
 			files = (
 				3DCA14B12C676F2500C969CE /* LaunchScreen.storyboard in Resources */,
 				3DCA14AE2C676F2500C969CE /* Assets.xcassets in Resources */,
-				3DCA14AC2C676F2300C969CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,26 +186,19 @@
 			files = (
 				3DCA14A92C676F2300C969CE /* SignUpVC.swift in Sources */,
 				3DCA14C32C67706E00C969CE /* HomeVC.swift in Sources */,
+				3D4EC8B02C777BC50012459F /* ColorPage.swift in Sources */,
 				3DCA14A52C676F2300C969CE /* AppDelegate.swift in Sources */,
-				3DCA14C52C6770C000C969CE /* Protocol.swift in Sources */,
 				3DCA14C12C67705B00C969CE /* SignInVC.swift in Sources */,
-				3DCA14BD2C676FC000C969CE /* ViewModel.swift in Sources */,
 				3DCA14BF2C676FE700C969CE /* LaunchVC.swift in Sources */,
 				3DCA14A72C676F2300C969CE /* SceneDelegate.swift in Sources */,
+				3DA638482C75F824003807DD /* CustomButtonDelegate.swift in Sources */,
+				3DA6384A2C761FA3003807DD /* CustomTextFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3DCA14AA2C676F2300C969CE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3DCA14AB2C676F2300C969CE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3DCA14AF2C676F2500C969CE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -348,7 +340,6 @@
 				INFOPLIST_FILE = UserLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -375,7 +366,6 @@
 				INFOPLIST_FILE = UserLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
