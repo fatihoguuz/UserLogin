@@ -42,6 +42,7 @@ class CustomTextField: UIView, UITextFieldDelegate {
         textField.textColor = .black
         textField.layer.cornerRadius = 15
         textField.keyboardLayoutGuide.keyboardDismissPadding = 20
+        textField.isSecureTextEntry = true
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
